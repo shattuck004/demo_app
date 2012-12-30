@@ -17,8 +17,6 @@ group :assets do
   gem 'coffee-rails', '3.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'libv8', '3.11.8.0'
-  gem 'therubyracer'
 
   gem 'uglifier', '1.2.3'
 end
@@ -42,8 +40,6 @@ end
 # gem 'capistrano'
 
 # To use debugger
-group :test do
-	gem 'redgreen'
-	gem 'ruby-debug19', :require => 'ruby-debug', :platforms => :mri_19
-end
+gem 'debugger', group: [:development, :test]
+
 
